@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('membersbg.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #0e1c1c;
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 5px 10px 50px black;
+            position: relative;
+        }
+
+        h1 {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-family: Lucida Console;
+            transition: transform 0.6s ease-in-out;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 4vw;
+            color: white;
+            text-transform: uppercase;
+            margin: 2% auto;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 2%;
+            margin-bottom: 2%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2.5px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 10px;
+            text-align: center;
+            padding: 5%;
+            width: 30%;
+            max-width: 200px;
+            margin: 2%;
+        }
+
+        img {
+            width: 80%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .card h3, .card h4 {
+            color: white;
+            margin: 5% 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            h2 {
+                font-size: 5vw;
+            }
+            
+            .card {
+                width: 45%;
+                max-width: 200px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            h1 {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            nav ul li a {
+                font-size: 0.8em;
+                padding: 10px 20px;
+            }
+            
+            .card {
+                width: 80%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Crusty Cup Café</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="vision.html">Vision</a></li>
+            <li><a href="mission.html">Mission</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h2>Members</h2>
+
+<div class="main">
+    <div class="card">
+        <img src="sample.png" alt="John Mark Agsaoay">
+        <h3>John Mark Agsaoay</h3>
+        <h4>12-ITE-02</h4>
+    </div>
+    <div class="card">
+        <img src="frank.jpg" alt="Frank Kenneth Ferrer">
+        <h3>Frank Kenneth Ferrer</h3>
+        <h4>12-ITE-02</h4>
+    </div>
+    <div class="card">
+        <img src="kurt.jpg" alt="Kurt John Kyzel Fabro">
+        <h3>Kurt John Kyzel Fabro</h3>
+        <h4>12-ITE-02</h4>
+    </div>
+    <div class="card">
+        <img src="jm.jpg" alt="John Michael Mercado">
+        <h3>John Michael Mercado</h3>
+        <h4>12-ITE-02</h4>
+    </div>
+    <div class="card">
+        <img src="mc.jpg" alt="Mark Christian Salvador">
+        <h3>Mark Christian Salvador</h3>
+        <h4>12-ITE-02</h4>
+    </div>
+</div>
+
+</body>
+</html>
